@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+function okno_zamknij_radchenko()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var dzien1_rad=prompt("dzień 1 = ","");
+var dzien2_rad=prompt("dzień 2 = ","");
+var roznica_rad;
+
+roznica_rad=(dzien2_rad*24*60*60) - (dzien1_rad*24*60*60);
+document.write("Pomiędzy dniem "+dzien1_rad+" i dniem "+dzien2_rad+" minęło "+roznica_rad+" sekund");
+</script>
+<br/>
+<br/>
+<input type="button" onclick="okno_zamknij_radchenko()" value="zamknij okno" />
+</div>
+</body>
+</html>

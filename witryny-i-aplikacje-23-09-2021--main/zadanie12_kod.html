@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Zadanie 12-kod</title>
+<script type="text/javascript">
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="180" rows="29">
+Kod pliku Zadanie12.html:
+
+<html>
+<head>
+<script>
+function okno_zamknij_radchenko()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var m_rad=prompt("Wprowadź m = ","");
+var a_rad = parseFloat(m_rad);
+var a1_rad = a_rad*2;
+
+document.write("1/"+a_rad+" = "+"1/"+a1_rad+" + 1/"+a1_rad);
+
+</script>
+<br/>
+<br/>
+<input type="button" onclick="okno_zamknij_radchenko()" value="zamknij okno" />
+</div>
+</body>
+</html>
+</textarea>
+
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>

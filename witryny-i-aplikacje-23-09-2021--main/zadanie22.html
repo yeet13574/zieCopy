@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Zadanie 22</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function dlugosc(a_rad,c_rad)
+{
+ a_rad=parseFloat(a_rad);
+ c_rad=parseFloat(c_rad);
+ b_rad=Math.sqrt(c_rad*c_rad-a_rad*a_rad);
+ h_rad=b_rad;
+
+ document.getElementsByName('wys')[0].value=h_rad.toFixed(2);
+ alert("Wysokość (h)="+h_rad.toFixed(2)+" m");
+ wysokosc.innerHTML="Wysokość (h)="+h_rad.toFixed(2)+" m"+"<br>";
+}
+function obwod_rad(a_rad,c_rad)
+{
+ a_rad=parseFloat(a_rad);
+ c_rad=parseFloat(c_rad);
+ b_rad=Math.sqrt(c_rad*c_rad-a_rad*a_rad);
+ radian_rad=Math.atan2(a_rad,b_rad);
+ stopnie_rad=radian_rad*(180/Math.PI);
+ document.getElementsByName('kat')[0].value=stopnie_rad.toFixed(2);
+ alert("Kąt="+stopnie_rad.toFixed(2)+" stopni");
+ kat_stopnie.innerHTML="Alfa="+stopnie_rad.toFixed(2)+" stopni";
+}
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Obliczanie drabiny :DDD
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="dlugosc(this.odl_dana_rad.value,this.s_dana_rad.value);
+obwod_rad(this.odl_dana_rad.value,this.s_dana_rad.value);return false">
+Podaj odległość=
+<input size="6" name="odl_dana_rad">
+Podaj ile przeleciał samolot=
+<input size="6" name="s_dana_rad">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Wysokość (h)=
+<input size="6" name="wys">
+Kąt=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="wysokosc"></tr>
+<tr id="kat_stopnie"></tr>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</table>
+</body>
+</html>

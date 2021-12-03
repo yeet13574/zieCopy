@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Zadanie 8-kod</title>
+<script type="text/javascript">
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="180" rows="30">
+Kod pliku Zadanie8.html:
+
+<html>
+<head>
+<script>
+function okno_zamknij_radchenko()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var dzien1=prompt("dzień 1 = ","");
+var dzien2=prompt("dzień 2 = ","");
+var roznica;
+
+roznica=(dzien2*24*60*60) - (dzien1*24*60*60);
+document.write("Pomiędzy dniem "+dzien1+" i dniem "+dzien2+" minęło "+roznica+" sekund");
+</script>
+<br/>
+<br/>
+<input type="button" onclick="okno_zamknij_radchenko()" value="zamknij okno" />
+</div>
+</body>
+</html>
+</textarea>
+
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>

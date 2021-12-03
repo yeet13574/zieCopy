@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Zadanie 62-kod</title>
+<script type="text/javascript">
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="180" rows="37">
+    <html>
+        <head>
+        <meta charset="UTF-8"/>
+        </head>
+        <body>
+        <div style="color:red;font-size:50px;">
+        <script language="JavaScript">
+        var x=prompt("podaj liczbę x=","");
+        var a=parseFloat(x);
+        document.write("czytana liczba x="+a+"<br>");
+        if(a>0){
+        document.write("czytana liczba jest większa od 0"+"<br>");
+        }
+        if(a==0){
+        document.write("czytana liczba jest równa 0"+"<br>");
+        }
+        if(a<0){
+        document.write("czytana liczba jest mniejsza od 0"+"<br>");
+        }
+        function okno_zamknij_radchenko_kod()
+        {
+        window.close()
+        }
+        // Dokończ dwa pozostałe przypadki a==0 i a<0
+        // polskie litery mają działać(uzupełnij w kodzie strony)
+        </script>
+        </div>
+        <br/>
+        <br/>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+        </body>
+        </html>
+</textarea>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+<script>
+function okno_zamknij_radchenko()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<p>1. Wymień cztery sposoby wyprowadzania danych w JS:</p><br/>
+<p>Cztery sposoby <u><b>wyprowadzania</b></u> danych na stronę:</p>
+<ol>
+<li>Z użyciem dokument.write()</li>
+<li>Z użyciem okienka alert()</li>
+<li>Do okienek formularza</li>
+<li>Do tabeli</li>
+</ol>
+<br/>
+<p>2. Czym jest funkcja w JS, omów przy użyciu 4 podpunktów?</p><br/>
+<ol>
+<li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy</li>
+<li>Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod</li>
+<li>Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np.
+suma_kry(a, b)</li>
+<li>Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return.</li>
+</ol>
+<br/>
+<p>3. Omów metody <b>getElementsByName, getElementById, getElementByTagName</b> (może być w
+postaci tabeli):</p><br/>
+
+<table>
+<tr><th>metoda</th><th>opis</th></tr>
+<tr><td>getElementById("id") </td><td>dostęp do wszystkich elementów o konkretnej wartości atrybutu id</td></tr>
+<tr><td>getElementByTagName("znacznik") </td><td>dostęp do wszystkich elementów o typie znacznika, np. P lub DIV </td></tr>
+<tr><td>getElementByName("nazwa") </td><td>dostęp do wszystkich elementów o konkretnej wartości atrybutu</td></tr>
+</table><br/>
+
+<p>4. Omów właściwości <b>innerHTML innerText className:</b></p><br/>
+<ol>
+<li><b>innerHTML</b> – umożliwia określenie kodu HTML który zostanie umieszczony w elemencie np. w tabeli</li>
+<li><b>innerText</b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie</li>
+<li><b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu</li>
+</ol>
+<input type="button" onclick="okno_zamknij_radchenko()" value="zamknij okno" />
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Zadanie 64-kod</title>
+<script type="text/javascript">
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="180" rows="31">
+    <html>
+        <head>
+        <meta charset="UTF-8"/>
+        </head>
+        <body>
+        <div>
+        <script language="JavaScript">
+        var x=prompt("podaj liczbę=","");
+        var a=parseFloat(x);
+        if(x%2==0){
+        document.write("<font color=red size=3>ta liczba jest parzysta</font>");
+        }
+        if(x%2!=0){
+        document.write("<font color=blue size=5>ta liczba jest nie parzysta</font>");
+        }
+        function okno_zamknij_radchenko_kod()
+        {
+        window.close()
+        }
+        </script>
+        </div>
+        <br/>
+        <br/>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+        </body>
+        </html>
+</textarea>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>

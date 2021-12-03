@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Zadanie 17-kod</title>
+<script type="text/javascript">
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="180" rows="45">
+Kod pliku Zadanie17.html:
+
+<!DOCTYPE html>
+ <head>
+ <title> Użycie fukcji </title>
+ <meta charset="utf-8">
+ <script language="JavaScript">
+ function okno_zamknij_radchenko()
+{
+window.close()
+}
+ </script>
+ </head>
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function suma_rad(a, b) {
+ return a + b;
+ }
+ function odejmowanie_rad(a, b) {
+ return a - b;
+ }
+ function mnozenie_rad(a, b) {
+ return a * b;
+ }
+ function do_potegi_rad(a, b) {
+ return Math.pow(a,b);
+ }
+ function reszta_z_dzielenia_rad(a, b) {
+ return a % b;
+ }
+ document.write("suma="+suma_rad(a,b)+"<br>"+"różnica="+odejmowanie_rad(a,b)+"<br>"+"mnożenie="+mnozenie_rad(a,b)+"<br>"+"potęgowanie a przez b="+do_potegi_rad(a,b)+"<br>"+"reszta z dzielenia="+reszta_z_dzielenia_rad(a,b)+"<br>");
+</script>
+<br/>
+<br/>
+<input type="button" onclick="okno_zamknij_radchenko()" value="zamknij okno" />
+</div>
+</body>
+</html>
+</textarea>
+
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>

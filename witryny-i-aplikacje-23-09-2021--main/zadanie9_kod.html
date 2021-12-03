@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Zadanie 9-kod</title>
+<script type="text/javascript">
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="180" rows="38">
+Kod pliku Zadanie9.html:
+
+<html>
+<head>
+<script>
+function okno_zamknij_radchenko()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var D1_radc=prompt("dzień 1 = ","");
+var D2_radc=prompt("dzień 2 = ","");
+var G1_radc=prompt("G1 = ","");
+var G2_radc=prompt("G2 = ","");
+var roznica_radc;
+var roznica_d_radc;
+var roznica_g_radc;
+
+roznica_d_radc=(D2_radc*24*60*60) - (D1_radc*24*60*60);
+roznica_g_radc=G2_radc*60*60 - G1_radc*60*60;
+roznica_radc=roznica_d_radc + roznica_g_radc;
+document.write("Pomiędzy dniem " + D1_radc + ", godziny " + G1_radc + " i dniem " + D2_radc + ", godziny " + G2_radc + " minęło " + roznica_radc + " sekund");
+</script>
+<br/>
+<br/>
+<input type="button" onclick="okno_zamknij_radchenko()" value="zamknij okno" />
+</div>
+</body>
+</html>
+</textarea>
+
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>

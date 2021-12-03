@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+</head>
+<body>
+<div>
+<font style="color:green; font-size:2cm;">MENU</font><br>
+<font style="color:red; font-size:2cm;">1-Czerwony</font><br>
+<font style="color:blue; font-size:2cm;">2-Niebieski</font><br>
+<script language="JavaScript">
+function sprawdz(a_rad_){
+x_rad=a_rad_.toLowerCase();
+if(x_rad==1 || x_rad=='czerwony'){
+kolor.innerHTML="<font color=red size=7>wpisałes kolor czerwony</font>";
+}
+if(x_rad==2 || x_rad=='niebieski'){
+kolor.innerHTML="<font color=blue size=1>wpisałes kolor niebieski</font>";
+}
+}
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+<form name="formularz" onsubmit="sprawdz(this.a_rad.value);return false">
+Podaj kolor=
+<input size="6" name="a_rad">
+<br>
+<br>
+<input type="submit" Value="Sprawdź" >
+<br>
+<br>
+<table>
+<tr id="kolor"></tr>
+</table>
+</form>
+</div>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>

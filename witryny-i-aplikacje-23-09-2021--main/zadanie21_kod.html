@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Zadanie 21-kod</title>
+<script type="text/javascript">
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="180" rows="63">
+Kod pliku Zadanie21.html:
+<html>
+<head>
+<title>Zadanie 21</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function dlugosc_rad(d_rad,x_rad)
+{
+ d_rad=parseFloat(d_rad);
+ x_rad=parseFloat(x_rad);
+ drabina_rad=Math.sqrt(d_rad*d_rad+x_rad*x_rad);
+ document.getElementsByName('drab')[0].value=drabina_rad.toFixed(2);
+ alert("Drabina="+drabina_rad.toFixed(2)+" m");
+ drabina.innerHTML="Drabina="+drabina_rad.toFixed(2)+" m"+"<br>";
+}
+function alfa_rad(d_rad,x_rad)
+{
+ d_rad=parseFloat(d_rad);
+ x_rad=parseFloat(x_rad);
+ radian_rad=Math.atan2(d_rad,x_rad);
+ stopnie_rad=radian_rad*(180/Math.PI);
+ document.getElementsByName('kat')[0].value=stopnie_rad.toFixed(2);
+ alert("Alfa="+stopnie_rad.toFixed(2)+" stopni");
+ alfa.innerHTML="Alfa="+stopnie_rad.toFixed(2)+" stopni";
+}
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Obliczanie drabiny :DDD
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="dlugosc_rad(this.d_dana_rad.value,this.x_dana_rad.value);
+alfa_rad(this.d_dana_rad.value,this.x_dana_rad.value);return false">
+Podaj d=
+<input size="6" name="d_dana_rad">
+Podaj x=
+<input size="6" name="x_dana_rad">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="drab">
+Alfa=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="drabina"></tr>
+<tr id="alfa"></tr>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</table>
+</body>
+</html>
+</textarea>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>

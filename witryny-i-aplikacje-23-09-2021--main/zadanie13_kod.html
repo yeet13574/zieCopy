@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Zadanie 13-kod</title>
+<script type="text/javascript">
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="180" rows="38">
+Kod pliku Zadanie13.html:
+
+<html>
+<head>
+<script>
+function okno_zamknij_radchenko()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var a_rad=prompt("Wprowadź A = ","");
+var b_rad=prompt("Wprowadź B = ","");
+a_rad=parseFloat(a_rad);
+b_rad=parseFloat(b_rad);
+var wynik_rad=a_rad*a_rad*a_rad;
+var wynik2_rad=3*(a_rad*a_rad*b_rad);
+var wynik3_rad=3*(a_rad*b_rad*b_rad);
+var wynik4_rad=b_rad*b_rad*b_rad;
+var wynik5_rad=wynik_rad+wynik2_rad+wynik3_rad+wynik4_rad;
+
+document.write("("+a_rad+" + "+b_rad+")^3 = "+a_rad+"^3 + 3*(("+a_rad+")^2)*("+b_rad+") + 3*("+a_rad+")*(("+b_rad+")^2) + "+b_rad+"^3 = "+wynik_rad+" + "+wynik2_rad+" + "+wynik3_rad+" + "+wynik4_rad+" = "+wynik5_rad);
+
+</script>
+<br/>
+<br/>
+<input type="button" onclick="okno_zamknij_radchenko()" value="zamknij okno" />
+</div>
+</body>
+</html>
+</textarea>
+
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>

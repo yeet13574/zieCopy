@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Zadanie 20-kod</title>
+<script type="text/javascript">
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="180" rows="67">
+Kod pliku Zadanie20.html:
+<html>
+<head>
+<title>Zadanie 20</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function pole_radchenko(a_rad,b_rad,h_rad)
+{
+ a_rad=parseFloat(a_rad);
+ b_rad=parseFloat(b_rad);
+ h_rad=parseFloat(h_rad);
+ pole_wynik_rad=(a_rad+b_rad)*h_rad/2;
+ document.getElementsByName('pole')[0].value=pole_wynik_rad.toFixed(2);
+ alert("Pc="+pole_wynik_rad.toFixed(2)+" cm^2");
+ wprowadz_pole_rad.innerHTML="Pc="+pole_wynik_rad.toFixed(2)+" cm^2"+"<br>";
+}
+function obwod_rad(a_rad,b_rad,h_rad)
+{
+ a_rad=parseFloat(a_rad);
+ b_rad=parseFloat(b_rad);
+ h_rad=parseFloat(h_rad);
+ x_rad=Math.abs(a_rad-b_rad)/2;
+ c_rad=Math.sqrt(x_rad*x_rad+h_rad*h_rad);
+ d_rad=c_rad;
+ obwod_rad=a_rad+b_rad+c_rad+d_rad;
+ document.getElementsByName('obw')[0].value=obwod_rad.toFixed(2);
+ alert("Obwod="+obwod_rad.toFixed(2)+" cm");
+ wprowadz_obw_rad.innerHTML="Obwód="+obwod_rad.toFixed(2)+" cm";
+}
+function okno_zamknij_radchenko_kod()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Obliczanie pola oraz obwodu trapezu równoramiennego
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="pole_radchenko(this.a_dana_rad.value,this.b_dana_rad.value,this.h_dana_rad.value);
+obwod_rad(this.a_dana_rad.value,this.b_dana_rad.value,this.h_dana_rad.value);return false">
+Podaj a=
+<input size="6" name="a_dana_rad">
+Podaj b=
+<input size="6" name="b_dana_rad">
+Podaj h=
+<input size="6" name="h_dana_rad">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+<input size="6" name="pole">
+Obwód=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="wprowadz_pole_rad"></tr>
+<tr id="wprowadz_obw_rad"></tr>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</table>
+</body>
+</html>
+</textarea>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_radchenko_kod()"/>
+</body>
+</html>
